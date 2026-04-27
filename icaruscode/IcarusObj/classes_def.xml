@@ -104,4 +104,22 @@
   <class name="art::Wrapper<art::Assns<icarus::Hit,recob::ChannelROI,void>>"/>
   <class name="art::Wrapper<art::Assns<recob::ChannelROI,icarus::Hit,void>>"/>
 
+  <!--New Add -->
+  <!-- NuGraph: recob::Hit <-> anab::FeatureVector associations -->
+  <class name="art::Assns<recob::Hit, anab::FeatureVector<1>, void>" />
+  <class name="art::Assns<recob::Hit, anab::FeatureVector<5>, void>" />
+  <class name="art::Wrapper<art::Assns<recob::Hit, anab::FeatureVector<1>, void>>" />
+  <class name="art::Wrapper<art::Assns<recob::Hit, anab::FeatureVector<5>, void>>" />
+  <class name="art::Assns<anab::FeatureVector<1>, recob::Hit, void>" />
+  <class name="art::Assns<anab::FeatureVector<5>, recob::Hit, void>" />
+  <class name="art::Wrapper<art::Assns<anab::FeatureVector<1>, recob::Hit, void>>" />
+  <class name="art::Wrapper<art::Assns<anab::FeatureVector<5>, recob::Hit, void>>" />
+  <class name="std::pair<art::Ptr<recob::Hit>, art::Ptr<anab::FeatureVector<1>>>" />
+  <class name="std::pair<art::Ptr<recob::Hit>, art::Ptr<anab::FeatureVector<5>>>" />
+  <class name="std::pair<art::Ptr<anab::FeatureVector<1>>, art::Ptr<recob::Hit>>" />
+  <class name="std::pair<art::Ptr<anab::FeatureVector<5>>, art::Ptr<recob::Hit>>" />
+  <class name="std::vector<art::Ptr<recob::Slice>>"/>
+  <class name="art::Wrapper<std::vector<art::Ptr<recob::Slice>>>"/>
+  <class name="std::vector<art::Ptr<recob::Hit>>"/>
+  <class name="art::Wrapper<std::vector<art::Ptr<recob::Hit>>>"/>
 </lcgdict>

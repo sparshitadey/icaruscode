@@ -21,6 +21,8 @@ icarus_basicpandora:
     PrintOverallRecoStatus:                      false
     HitCollectionTool:                           { tool_type: LArPandoraHitCollectionToolICARUS }
 }
+#  NuGraph settings (enable when running NuGraph):
+#  icarus_basicpandora.ShouldCollectHitPredictions: true
 
 icarus_pandora:                                  @local::icarus_basicpandora
 icarus_pandora.ConfigFile:                       "PandoraSettings_Master_ICARUS.xml"

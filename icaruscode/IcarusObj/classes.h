@@ -25,3 +25,6 @@
 namespace {
   icarus::SimEnergyDepositSummary EDepSum;
 }
+#include "lardataobj/RecoBase/Hit.h"
+#include "lardataobj/AnalysisBase/MVAOutput.h"
+#include "lardataobj/RecoBase/Slice.h"

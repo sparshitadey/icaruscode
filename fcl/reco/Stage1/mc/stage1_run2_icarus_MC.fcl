@@ -51,6 +51,7 @@ physics.producers: {
 physics.reco: [ 
                 @sequence::icarus_reco_Gauss2D_CryoE ,
                 @sequence::icarus_reco_Gauss2D_CryoW ,
+                @sequence::icarus_postPandora_Gauss,
                 @sequence::icarus_reco_fm,
                 @sequence::icarus_tpcpmtbarycentermatch,
                 @sequence::icarus_crttrack,
