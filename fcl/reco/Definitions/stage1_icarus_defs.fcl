@@ -423,7 +423,7 @@ icarus_stage1_producers.cluster3DCryoE.Hit3DBuilderAlg.MaxMythicalChiSquare:    
 icarus_stage1_producers.cluster3DCryoE.Hit3DBuilderAlg.OutputHistograms:                         false
 
 ### Definitions for a pandora by cryostat
-icarus_stage1_producers.pandoraGausCryoW.HitFinderModuleLabel:                                   "combineHitsCryoW"
+icarus_stage1_producers.pandoraGausCryoW.HitFinderModuleLabel:                                   "cluster3DCryoW"
 # icarus_stage1_producers.pandoraGausCryoW.HitFinderModuleLabel:                                   ""
 # icarus_stage1_producers.pandoraGausCryoW.HitCollectionTool.OverrhideHitLabels:                   ["gaushit2dTPCWW", "gaushit2dTPCWE"]
 icarus_stage1_producers.pandoraTrackGausCryoW.PFParticleLabel:                                   "pandoraGausCryoW"
@@ -431,7 +431,7 @@ icarus_stage1_producers.pandoraTrackGausCryoW.UseAllParticles:                  
 icarus_stage1_producers.pandoraKalmanTrackGausCryoW.inputCollection:                             "pandoraGausCryoW"
 icarus_stage1_producers.pandoraKalmanTrackGausCryoW.trackInputTag:                               "pandoraTrackGausCryoW"
 
-icarus_stage1_producers.pandoraGausCryoE.HitFinderModuleLabel:                                   "combineHitsCryoE"
+icarus_stage1_producers.pandoraGausCryoE.HitFinderModuleLabel:                                   "cluster3DCryoE"
 # icarus_stage1_producers.pandoraGausCryoE.HitFinderModuleLabel:                                   ""
 # icarus_stage1_producers.pandoraGausCryoE.HitCollectionTool.OverrhideHitLabels:                   ["gaushit2dTPCEW", "gaushit2dTPCEE"]
 icarus_stage1_producers.pandoraTrackGausCryoE.PFParticleLabel:                                   "pandoraGausCryoE"

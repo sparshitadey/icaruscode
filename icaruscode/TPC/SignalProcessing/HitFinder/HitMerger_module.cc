@@ -154,7 +154,20 @@ void HitMerger::produce(art::Event & evt)
     
     // Use this handy art utility to make art::Ptr objects to the new recob::Hits for use in the output phase
     art::PtrMaker<recob::Hit> ptrMaker(evt);
-    
+
+    //------------------New Sparshita Dey 2026-------------------------//
+    // Pre-count total hits to reserve capacity and prevent vector reallocation
+    // from invalidating raw pointers stored in recobHitToPtrMap
+    size_t totalHits = 0;
+    for(const auto& inputTag : HitMergerfHitProducerLabelVec)
+    {
+        art::Handle<std::vector<recob::Hit>> hitHandle;
+        evt.getByLabel(inputTag, hitHandle);
+        if (hitHandle.isValid()) totalHits += hitHandle->size();
+    }
+    outputHitPtrVec->reserve(totalHits);
+    //-----------------------------------------------------------------//
+
     // Outside loop over the input hit producers
     for(const auto& inputTag : HitMergerfHitProducerLabelVec)
     {
