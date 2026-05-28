@@ -17,5 +17,8 @@ physics.producers.cafmaker.PFParticleLabel: "pandoraGausNuGraphReco"
 
 ## Use NuGraph2's PID after NuGraph2's filter
 physics.producers.cafmaker.UsePandoraAfterNuGraph: true
-physics.producers.cafmaker.NuGraphFilterLabel: "ngfilteredhits:filter"
-physics.producers.cafmaker.NuGraphSemanticLabel: "ngfilteredhits:semantic"
+#physics.producers.cafmaker.NuGraphFilterLabel: "ngfilteredhits:filter"
+#physics.producers.cafmaker.NuGraphSemanticLabel: "ngfilteredhits:semantic"
+# NEW:
+physics.producers.cafmaker.NuGraphFilterLabel:   "NGMultiSlice:filter"
+physics.producers.cafmaker.NuGraphSemanticLabel: "NGMultiSlice:semantic"
