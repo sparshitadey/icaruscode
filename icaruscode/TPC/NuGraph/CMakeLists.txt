@@ -83,6 +83,19 @@ cet_build_plugin(ICARUSNuGraphAnalyzer art::EDAnalyzer
     art_root_io::TFileService_service
     ROOT::Tree
     lardata::RecoBaseProxy
+    lardataobj::RecoBase
+    nusimdata::SimulationBase
+    larsim::MCCheater_BackTrackerService_service
+    larsim::MCCheater_ParticleInventoryService_service
+    lardata::DetectorClocksService
+)
+
+cet_build_plugin(ICARUSNuGraphAnalyzerRecoFix art::EDAnalyzer
+    LIBRARIES PRIVATE
+    art_root_io::TFileService_service
+    ROOT::Tree
+    lardata::RecoBaseProxy
+    lardataobj::RecoBase
 )
 
 cet_build_plugin(ICARUSPandoraHitDumpAnalyzer art::EDAnalyzer
